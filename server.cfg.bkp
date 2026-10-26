@@ -1,0 +1,69 @@
+# StreetKings by 919DESIGN & Envi-Scripts
+# Special thanks to Rockstar Games
+# 
+# Please check the docs for more information about server configuration:
+#   https://aka.cfx.re/server-commands
+#   https://docs.fivem.net/docs/server-manual/setting-up-a-server/
+# 
+# StreetKings Developer API docs:
+#   https://github.com/streetkings-fivem/streetkings/blob/main/SK_API.md
+
+## You SHOULD edit the following:
+sv_hostname "QBOX CLEAN built with StreetKings!"
+sets sv_projectName "[StreetKings] QBOX CLEAN"
+sets sv_projectDesc "StreetKings is a freeroam street racing gamemode for FiveM where you can race solo or compete against up to 20 other players. Earn XP to level up your character and vehicle, progressing through five classes - STARTER, C, B, A, and S. A curated list of races refreshes every day, with a bonus reward for players who complete them all. A mini-campaign of cinematic story missions introduces players to its theme and setting."
+sets tags "racing, streetkings"
+sets locale "root-AQ" # replace with your language and location code, like en-US, pt-BR, etc
+
+## You CAN edit the following:
+sv_enforceGameBuild 3751
+sv_licenseKey "cfxk_1ZZTBwsyExiwKYrq2pU3m_1H5IyH"
+sv_maxclients 48
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+set steam_webApiKey "none"
+load_server_icon "SKIcon.png"
+set mysql_connection_string "mysql://root@localhost/StreetKings_4AE6B7?charset=utf8mb4"
+
+
+## Permissions ##
+add_ace group.admin command allow # allow all commands
+
+# Resources
+add_ace resource.streetkings command allow # Allow streetkings to execute commands
+
+# Ox_lib
+add_ace resource.ox_lib command.add_ace allow
+add_ace resource.ox_lib command.remove_ace allow
+add_ace resource.ox_lib command.add_principal allow
+add_ace resource.ox_lib command.remove_principal allow
+
+# Ace Groups
+add_ace group.admin admin allow
+add_ace group.mod mod allow
+add_ace group.support support allow
+
+# Inheritance
+add_principal group.admin group.mod
+add_principal group.mod group.support
+
+add_principal identifier.fivem:15217884 group.admin #Alucard_Fagner
+
+## Miscellaneous ##
+set sv_pureLevel 2
+set sv_enableNetworkedSounds false
+set sv_enableNetworkedScriptEntityStates false
+setr sv_showBusySpinnerOnLoadingScreen false
+
+# Dependencies
+ensure oxmysql
+ensure ox_lib
+ensure [standalone]
+
+# StreetKings
+ensure streetkings_audio
+ensure streetkings_blips
+ensure streetkings
+
+# Assets
+ensure [assets]

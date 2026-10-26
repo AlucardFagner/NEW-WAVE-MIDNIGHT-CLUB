@@ -1,0 +1,107 @@
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [21652] FXServer Starting - 06/07/2026 08:02:18        
+║             TXADMIN║ ================================================================
+║             TXADMIN║ setr "txAdmin-locale" "en"
+║             TXADMIN║ set "txAdmin-serverName" "Street Kings"
+║             TXADMIN║ set "txAdmin-checkPlayerJoin" "true"
+║             TXADMIN║ set "txAdmin-menuAlignRight" "false"
+║             TXADMIN║ set "txAdmin-menuPageKey" "Tab"
+║             TXADMIN║ set "txAdmin-playerModePtfx" "true"
+║             TXADMIN║ set "txAdmin-hideAdminInPunishments" "true"
+║             TXADMIN║ set "txAdmin-hideAdminInMessages" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultAnnouncement" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultDirectMessage" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultWarning" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultScheduledRestartWarning" "false"
+║             TXADMIN║ txaEvent "configChanged" "{}"
+[           resources] Scanning resources.
+[           resources] Found 8 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[           resources] Started resource bob74_ipl
+[    c-scripting-core] Creating script environments for pma-voice
+[           resources] Started resource pma-voice
+[           resources] Started resource streetkings_audio
+[           resources] Started resource streetkings_blips
+[    c-scripting-core] Creating script environments for streetkings
+[           resources] Started resource streetkings
+[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
+[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
+[      script:oxmysql] Unable to establish a connection to the database (ER_BAD_DB_ERROR)!
+[      script:oxmysql] Error 1049: Unknown database 'streetkings'
+[      script:oxmysql] See https://github.com/overextended/oxmysql/issues/154 for more information.
+[      script:oxmysql] {
+[      script:oxmysql]   "connectTimeout": 60000,
+[      script:oxmysql]   "trace": false,
+[      script:oxmysql]   "supportBigNumbers": true,
+[      script:oxmysql]   "jsonStrings": true,
+[      script:oxmysql]   "user": "root",
+[      script:oxmysql]   "host": "localhost",
+[      script:oxmysql]   "port": null,
+[      script:oxmysql]   "database": "StreetKings",
+[      script:oxmysql]   "charset": "utf8mb4",
+[      script:oxmysql]   "namedPlaceholders": false,
+[      script:oxmysql]   "flags": [
+[      script:oxmysql]     "CONNECT_WITH_DB"
+[      script:oxmysql]   ]
+[      script:oxmysql] }
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://deprecated-lq9yx4.users.cfx.re/
+║             TXADMIN║ txaEvent "serverShuttingDown" "{\"delay\":5000,\"author\":\"Alucard_Fagner\",\"message\":\"Server restarting (admin request).\"}"
+[      script:monitor] [txAdmin] Server shutting down. Kicking all players.
+
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [15660] FXServer Starting - 06/07/2026 08:02:57        
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[           resources] Found 8 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[           resources] Started resource bob74_ipl
+[    c-scripting-core] Creating script environments for pma-voice
+[           resources] Started resource pma-voice
+[           resources] Started resource streetkings_audio
+[           resources] Started resource streetkings_blips
+[    c-scripting-core] Creating script environments for streetkings
+[           resources] Started resource streetkings
+[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
+[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
+[      script:oxmysql] [12.3.2-MariaDB] Database server connection established!
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://deprecated-lq9yx4.users.cfx.re/
+[ citizen-server-impl] server thread hitch warning: timer interval of 205 milliseconds
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/players.json (Get "https://170.246.209.2:30120/players.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/players.json (Get "https://170.246.209.2:30120/players.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/info.json (Get "https://170.246.209.2:30120/info.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/info.json (Get "https://170.246.209.2:30120/info.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/dynamic.json (Get "https://170.246.209.2:30120/dynamic.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/dynamic.json (Get "https://170.246.209.2:30120/dynamic.json": read tcp 10.0.16.191:48976->170.246.209.2:30120: read: connection reset by peer)
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/players.json (Get "https://170.246.209.2:30120/players.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/players.json (Get "https://170.246.209.2:30120/players.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/players.json (Get "https://170.246.209.2:30120/players.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] Server list query returned an error: server request failed: server request failed for endpoint https://170.246.209.2:30120/players.json (Get "https://170.246.209.2:30120/players.json": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
+[ citizen-server-impl] server thread hitch warning: timer interval of 363 milliseconds
